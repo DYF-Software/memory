@@ -23,7 +23,6 @@ body {
     justify-content: center;
     width: 90vw;
     max-width: 500px;
-    height: 90vh;
     max-height: 600px;
     padding: 15px;
     box-sizing: border-box;
@@ -56,11 +55,13 @@ h1 {
 
 .cards {
     display: grid;
+    justify-content: center; 
     gap: 8px;
-    justify-content: center;
-    width: 85vw;
+    margin-top: 10px;
+    width: 100%;
     max-width: 340px;
-    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (orientation: portrait) {  
@@ -181,7 +182,7 @@ button:hover {
     background: #e6f2ff;
     color: #005ea1;
 }
-
+/* 
 @media (max-width: 400px) {
     .popup {
         width: 90%;
@@ -212,4 +213,4 @@ button:hover {
         font-size: 14px;
         padding: 10px 15px;
     }
-}
+} */
