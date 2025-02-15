@@ -36,6 +36,7 @@ h1 {
     text-transform: uppercase;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     letter-spacing: 1.5px;
+    text-align: center;
 }
 
 .moves {
@@ -51,6 +52,7 @@ h1 {
     display: inline-block;
     box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.2), 
                 inset -1px -1px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
 }
 
 .cards {
