@@ -22,7 +22,7 @@ body {
     justify-content: center;
     padding: 20px;
     width: 90vw;
-    max-width: 500px;
+    max-width: 300px;
 }
 
 h1 {
@@ -203,7 +203,7 @@ button:hover {
 /* Büyük ekranlar için (Masaüstü) */
 @media (min-width: 768px) {
     .popup {
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .popup-content {
