@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     background: radial-gradient(circle at center, #4a9ff5 10%, #3686e0 60%);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -20,14 +21,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     width: 90vw;
-    max-width: 300px;
+    max-width: 500px;
+    height: 90vh;
+    max-height: 600px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: clamp(22px, 4vw, 30px);
-    margin-bottom: 10px;
+    font-size: clamp(20px, 3vw, 28px);
+    margin-bottom: 5px;
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
@@ -36,15 +40,15 @@ h1 {
 }
 
 .moves {
-    font-size: clamp(16px, 3vw, 20px);
+    font-size: clamp(14px, 2.5vw, 18px);
     font-weight: bold;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.15);
-    padding: 8px 15px;
+    padding: 6px 12px;
     border-radius: 8px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: inline-block;
     box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.2), 
                 inset -1px -1px 5px rgba(0, 0, 0, 0.3);
@@ -52,12 +56,11 @@ h1 {
 
 .cards {
     display: grid;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
-    margin-top: 15px;
-    padding: 10px;
-    width: 80vw;
-    max-width: 350px;
+    width: 85vw;
+    max-width: 340px;
+    max-height: 400px;
 }
 
 @media (orientation: portrait) {  
@@ -106,7 +109,7 @@ h1 {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    font-size: clamp(30px, 8vw, 50px);
+    font-size: clamp(28px, 7vw, 48px);
     border-radius: 10px;
 }
 
@@ -119,7 +122,7 @@ h1 {
 
 .card .back {
     background: #24798d;
-    font-size: clamp(30px, 8vw, 50px);
+    font-size: clamp(28px, 7vw, 48px);
     color: #ffffff;
     font-weight: bold;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -136,38 +139,35 @@ h1 {
     transition: opacity 0.5s ease-out;
 }
 
-
 .popup {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(27, 14, 140, 0.95);
-    padding: clamp(15px, 4vw, 25px);
+    background: rgba(36, 121, 141, 0.95);
+    padding: clamp(10px, 3vw, 20px);
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     text-align: center;
     color: #ffffff;
-    width: 90%;
-    max-width: 350px;
+    width: 85%;
+    max-width: 320px;
     border: 2px solid #175f9b;
 }
 
-/* Responsive Pop-up İçeriği */
 .popup-content {
-    font-size: clamp(14px, 3vw, 20px);
+    font-size: clamp(14px, 2.5vw, 18px);
     font-weight: bold;
     letter-spacing: 1px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     padding-bottom: 10px;
 }
 
-/* Responsive Butonlar */
 button {
-    margin-top: 12px;
-    padding: clamp(8px, 2vw, 12px) clamp(15px, 4vw, 20px);
-    font-size: clamp(14px, 3vw, 18px);
+    margin-top: 10px;
+    padding: clamp(6px, 2vw, 10px) clamp(12px, 3vw, 18px);
+    font-size: clamp(12px, 2.5vw, 16px);
     background: #ffffff;
     color: #0078d4;
     border: none;
@@ -182,36 +182,34 @@ button:hover {
     color: #005ea1;
 }
 
-/* Küçük ekranlar için (Mobil) */
 @media (max-width: 400px) {
     .popup {
-        width: 95%;
-        max-width: 300px;
-        padding: 15px;
+        width: 90%;
+        max-width: 280px;
+        padding: 10px;
     }
     
     .popup-content {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .popup {
+        max-width: 360px;
+    }
+
+    .popup-content {
+        font-size: 18px;
     }
 
     button {
         font-size: 14px;
         padding: 10px 15px;
-    }
-}
-
-/* Büyük ekranlar için (Masaüstü) */
-@media (min-width: 768px) {
-    .popup {
-        max-width: 300px;
-    }
-
-    .popup-content {
-        font-size: 20px;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 12px 20px;
     }
 }
