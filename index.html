@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Memory Game</h1>
+        <p class="moves">Moves Left: <span id="moves">7</span></p>
+        <div class="cards">
+            <div class="card" data-name="apple" onclick="flipCard(this)">
+                <div class="front">🍎</div>
+                <div class="back"></div>
+            </div>
+            <div class="card" data-name="banana" onclick="flipCard(this)">
+                <div class="front">🍌</div>
+                <div class="back"></div>
+            </div>
+            <div class="card" data-name="cherry" onclick="flipCard(this)">
+                <div class="front">🍒</div>
+                <div class="back"></div>
+            </div>
+            <div class="card" data-name="apple" onclick="flipCard(this)">
+                <div class="front">🍎</div>
+                <div class="back"></div>
+            </div>
+            
+            <div class="card" data-name="banana" onclick="flipCard(this)">
+                <div class="front">🍌</div>
+                <div class="back"></div>
+            </div>
+            <div class="card" data-name="cherry" onclick="flipCard(this)">
+                <div class="front">🍒</div>
+                <div class="back"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2 id="message"></h2>
+            <p><strong>Gift Code:</strong> <span id="gift-code"></span></p>
+            <button onclick="copyCode()">Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
