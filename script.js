@@ -51,8 +51,8 @@ function checkForMatch() {
 function updateMoves() {
     moves--;
     document.getElementById("moves").textContent = moves;
-
-    if (moves === 0) {
+    console.log(matchedPairs);
+    if (moves === 0&&matchedPairs<2) {
         showPopup(false);
     }
 }
