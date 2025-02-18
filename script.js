@@ -26,6 +26,7 @@ function flipCard(card) {
     checkForMatch();
 }
 
+
 function checkForMatch() {
     let isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
